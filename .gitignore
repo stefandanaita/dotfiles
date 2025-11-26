@@ -1,0 +1,7 @@
+setup.conf
+tools/*
+tmp/*
+.DS_Store
+.idea/
+.zsh_profile
+secrets/*
