@@ -1,7 +1,7 @@
 [user]
   email = me@dsa.io
   name = Stefan Adrian Danaita
-  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOzLxIRxYj811MAAuvyRwLIis0bp5epDGgXXCkiya7P2
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE9tQMNdpeqcwEthoKZm6t1j1ngCu2dxomV6Tq+SFDC8
 
 [push]
   default = current
