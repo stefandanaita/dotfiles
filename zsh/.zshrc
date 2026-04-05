@@ -47,3 +47,5 @@ if command -v atuin &> /dev/null; then
   export ATUIN_SEARCH_MODE=fuzzy
   eval "$(atuin init zsh)"
 fi
+
+export NODE_EXTRA_CA_CERTS="/Library/Application Support/Netskope/STAgent/download/nscacert.pem"

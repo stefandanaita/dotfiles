@@ -56,3 +56,5 @@ alias ggm="git checkout master; ggf"
 # PHP
 alias pa="php artisan"
 alias mfs="php artisan migrate:fresh --seed"
+
+alias drastctl="kubectl --kubeconfig <(op item get \"Kubernetes:Kubeconfig:Atlantis\" --vault \"Infra:Automated\" --account \"FDZUGOIOYBDGDIP6KEQJWLFACI\" --format json | jq -r '.fields[] | select(.label == \"password\") | .value')"
