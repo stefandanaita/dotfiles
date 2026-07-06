@@ -48,4 +48,22 @@ if command -v atuin &> /dev/null; then
   eval "$(atuin init zsh)"
 fi
 
+# Netskope certs for PHP
+if [ -f "$HOME/.config/certs/netskope-bundle.pem" ]; then
+  export SSL_CERT_FILE="$HOME/.config/certs/netskope-bundle.pem"
+fi
+
 export NODE_EXTRA_CA_CERTS="/Library/Application Support/Netskope/STAgent/download/nscacert.pem"
+export PATH="/Users/stefan/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/Users/stefan/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/stefan/Library/Application Support/Herd/config/php/84/"
+
+
+# Herd injected NVM configuration
+export NVM_DIR="/Users/stefan/Library/Application Support/Herd/config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -f "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh" ]] && builtin source "/Applications/Herd.app/Contents/Resources/config/shell/zshrc.zsh"
